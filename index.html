@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HolyServer - Jefes Custom, Superpoderes y mucho más en Minecraft">
+    <meta name="keywords" content="Minecraft, Servidor, Jefes Custom, Superpoderes, Eventos, Comunidad, Minecraft 1.21">
+    <meta name="author" content="HolyServer">
+    <title>HolyServer - Jefes Custom, Superpoderes y más</title>
+    
+    <!-- Fuentes Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Pacifico&display=swap" rel="stylesheet">
+    
+    <!-- Estilos CSS -->
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #0e0f1a;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        header {
+            background: linear-gradient(135deg, #6A5ACD, #FF69B4);
+            width: 100%;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        header h1 {
+            font-family: 'Pacifico', cursive;
+            color: #fff;
+            font-size: 48px;
+            margin: 0;
+        }
+
+        header nav {
+            margin: 20px 0;
+        }
+
+        header nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        header nav a:hover {
+            color: #FF69B4;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-image: url('https://yourimageurl.com/hero.jpg'); /* Reemplaza con la URL de tu imagen de fondo */
+            background-size: cover;
+            background-position: center;
+            height: 70vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-align: center;
+            padding: 0 20px;
+            position: relative;
+        }
+
+        .hero h2 {
+            font-size: 50px;
+            text-transform: uppercase;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+
+        .hero button {
+            background-color: #FF69B4;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .hero button:hover {
+            background-color: #6A5ACD;
+        }
+
+        /* Section */
+        section {
+            text-align: center;
+            margin: 50px 0;
+            width: 80%;
+        }
+
+        section h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #FF69B4;
+        }
+
+        section p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 30px;
+        }
+
+        .feature {
+            background-color: #1a1c2c;
+            border-radius: 10px;
+            padding: 20px;
+            width: 30%;
+            margin: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .feature:hover {
+            transform: translateY(-10px);
+        }
+
+        .feature h3 {
+            font-size: 24px;
+            color: #FF69B4;
+            margin-bottom: 15px;
+        }
+
+        .feature p {
+            font-size: 16px;
+            color: #ccc;
+        }
+
+        /* Galería */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 50px;
+        }
+
+        .gallery img {
+            width: 30%;
+            border-radius: 10px;
+            margin: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Video Section */
+        .video-section {
+            margin: 50px 0;
+        }
+
+        .video-section iframe {
+            width: 80%;
+            height: 400px;
+            border: none;
+            border-radius: 10px;
+        }
+
+        /* Testimonios */
+        .testimonials {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 50px 0;
+        }
+
+        .testimonial {
+            background-color: #1a1c2c;
+            border-radius: 10px;
+            padding: 20px;
+            width: 30%;
+            margin: 10px;
+        }
+
+        .testimonial p {
+            font-size: 16px;
+            color: #ccc;
+            font-style: italic;
+        }
+
+        .testimonial h4 {
+            color: #FF69B4;
+            margin-top: 10px;
+            font-size: 18px;
+        }
+
+        footer {
+            background-color: #1a1c2c;
+            padding: 20px;
+            width: 100%;
+            text-align: center;
+            position: relative;
+        }
+
+        footer p {
+            color: #ccc;
+            font-size: 14px;
+        }
+
+        /* Botón de retorno al inicio */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #FF69B4;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-to-top:hover {
+            background-color: #6A5ACD;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>HolyServer</h1>
+        <nav>
+            <a href="#home">Inicio</a>
+            <a href="#features">Características</a>
+            <a href="#gallery">Galería</a>
+            <a href="#testimonials">Testimonios</a>
+            <a href="#contact">Contacto</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h2>Explora lo imposible</h2>
+        <p>Jefes customizados, superpoderes, eventos y una comunidad inigualable.</p>
+        <button>Únete ahora</button>
+    </div>
+
+    <!-- Sección de características -->
+    <section id="features">
+        <h2>Características Destacadas</h2>
+        <div class="features">
+            <div class="feature">
+                <h3>Jefes Custom</h3>
+                <p>Desafía a jefes únicos y poderosos, cada uno con habilidades especiales y mecánicas personalizadas que te harán sudar.</p>
+            </div>
+            <div class="feature">
+                <h3>Superpoderes</h3>
+                <p>Desbloquea superpoderes impresionantes y lleva tus habilidades al límite. ¡Conviértete en una leyenda en HolyServer!</p>
+            </div>
+            <div class="feature">
+                <h3>Eventos Exclusivos</h3>
+                <p>Participa en eventos exclusivos que solo ocurren en HolyServer. ¡Gana recompensas épicas y deja tu huella en el servidor!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería -->
+    <section id="gallery">
+        <h2></h2>
+        <div class="gallery">
+            <img src="https://i.imgur.com/pWF33eo.png" alt="Imagen 1">
+            <img src="https://i.imgur.com/pWF33eo.png" alt="Imagen 2">
+            <img src="https://i.imgur.com/pWF33eo.png" alt="Imagen 3">
+        </div>
+    </section>
+
+    <!-- Video del servidor -->
+    <section class="video-section">
+        <h2>Conoce más sobre HolyServer</h2>
+        <iframe src="<iframe width="560" height="315" src="https://www.youtube.com/embed/6BCuE7Hrq7o?si=lSKnHtl8VCjAkgbf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+
+    <!-- Testimonios -->
+    <section id="testimonials">
+        <h2>Lo que dice nuestra comunidad</h2>
+        <div class="testimonials">
+            <div class="testimonial">
+                <p>"HolyServer es el mejor servidor en el que he jugado. Los jefes son épicos y los superpoderes cambian el juego por completo."</p>
+                <h4>- YOSMC</h4>
+            </div>
+            <div class="testimonial">
+                <p>"Me encanta la comunidad de HolyServer. Siempre están organizando eventos increíbles y las recompensas son geniales."</p>
+                <h4>- JugadorATERNOSJSJ</h4>
+            </div>
+            <div class="testimonial">
+                <p>"Los jefes custom son realmente desafiantes. HolyServer ha cambiado mi experiencia en Minecraft para mejor."</p>
+                <h4>- skicbodigood</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <p>© 2024 HolyServer. Todos los derechos reservados. | Contacto: <a href="mailto:contacto@holyserver.com">contacto@holyserver.com</a></p>
+    </footer>
+
+    <!-- Botón para volver al inicio -->
+    <div class="back-to-top" onclick="scrollToTop()">↑</div>
+
+    <script>
+        // Mostrar el botón de "volver al inicio" al hacer scroll
+        window.onscroll = function() {
+            let backToTopButton = document.querySelector('.back-to-top');
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                backToTopButton.style.display = "block";
+            } else {
+                backToTopButton.style.display = "none";
+            }
+        };
+
+        // Función para volver al inicio
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+
+</body>
+</html>
